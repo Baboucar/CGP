@@ -13,6 +13,7 @@ from torch.utils.tensorboard import SummaryWriter
 
 # Import AMP modules (new style for autocast)
 from torch.amp import GradScaler, autocast
+from model_cnn import ModelCNN6
 
 # Import your data loading & evaluation utilities
 import data_util
@@ -108,7 +109,8 @@ if __name__ == "__main__":
     )
 
     # 4) Initialize Model
-    model = Model(user_num, item_num).to(args.device)
+    model = Model(user_num, item_num, embed_dim=32).to(args.device)
+    #model = ModelCNN6(user_num, item_num).to(args.device)
 
     # Use an optimizer (Adagrad in this case)
     optimizer = optim.Adagrad(model.parameters(), lr=args.lr)
