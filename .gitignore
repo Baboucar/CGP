@@ -1,0 +1,11 @@
+# Any folder named "runs" anywhere
+runs/
+**/runs/**
+
+# Common checkpoint dirs
+checkpoints/
+**/checkpoints/**
+model_ckpts/
+**/model_ckpts/**
+ckpts/
+**/ckpts/**
