@@ -1,0 +1,45 @@
+{
+  "args": {
+    "model": "lightgcl",
+    "data": "data/pinterest-20",
+    "d": 64,
+    "layers": 2,
+    "lr": 0.001,
+    "wd": 0.0,
+    "reg": 0.0001,
+    "cl": 0.005,
+    "tau": 0.2,
+    "gamma": 1.0,
+    "dropout": 0.1,
+    "edge_drop": 0.1,
+    "svd_q": 5,
+    "opt": "adam",
+    "batch": 4096,
+    "epochs": 100,
+    "num_negs": 1,
+    "eval_every": 5,
+    "eval_chunk": 128,
+    "loss_chunk": 0,
+    "in_batch_neg": true,
+    "workers": 4,
+    "no_amp": false,
+    "save": "bench/ckpts/pin_lightgcl.pt",
+    "tag": "pin_lightgcl"
+  },
+  "best_hr": 0.8656930074111657,
+  "best_ndcg": 0.5376993154067592,
+  "best_ep": 10,
+  "params": 4166592,
+  "hist": [
+    {
+      "epoch": 5,
+      "hr": 0.8563248591153714,
+      "ndcg": 0.5272481005741375
+    },
+    {
+      "epoch": 10,
+      "hr": 0.8656930074111657,
+      "ndcg": 0.5376993154067592
+    }
+  ]
+}

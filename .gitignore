@@ -1,11 +1,38 @@
-# Any folder named "runs" anywhere
+# python
+__pycache__/
+*.pyc
+.ipynb_checkpoints/
+
+# IDE
+.idea/
+
+# training artifacts / working files (not part of the release)
+bench/
 runs/
 **/runs/**
-
-# Common checkpoint dirs
 checkpoints/
 **/checkpoints/**
-model_ckpts/
-**/model_ckpts/**
 ckpts/
 **/ckpts/**
+model/
+*.pt
+*.pth
+*.log
+nohup.out
+
+# working duplicates of release files (canonical copies live in paper/ and figures/)
+/Vit4Rec_ICTExpress.docx
+Vit4Rec_package.zip
+Vit4Rec_package/
+/fig_arch.png
+/references.bib
+
+# local drafts and office files (paper/ carries the released copies)
+/*.docx
+*.doc
+/*.zip
+VisionTransformer for recommendation (1).pdf
+.~*
+
+# manuscript stays out of the public repo
+/paper/
