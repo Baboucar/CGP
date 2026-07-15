@@ -1,4 +1,4 @@
-# Graph propagation for collaborative filtering — code, paper, and data
+# Graph propagation for collaborative filtering — code, and data
 
 Self-contained package for the paper *"Contrastive graph propagation for top-K collaborative filtering"* (prepared for ICT Express).
 
